@@ -11,13 +11,13 @@ export default  Perfil = () => {
   return (
     <View >
        
-      <Text>Conheça nossa diretoria!</Text>
+      <Text >Conheça nossa programadora !</Text>
        <Text> Isabela linda</Text>
       
-      <TouchableOpacity 
-            onPress={() => navigation.navigate("ClassBella")}
+       <TouchableOpacity
+        onPress={() => navigation.navigate("escola")}
       >
-       <Text> volte para a pagina inicial</Text>
+        <Text> home.</Text>
       </TouchableOpacity>
     </View>
   )

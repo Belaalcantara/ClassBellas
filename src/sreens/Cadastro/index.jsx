@@ -1,5 +1,5 @@
 import { View, Text } from 'react-native'
-import React from 'react'
+
 
 import { TouchableOpacity } from 'react-native'
 import { useNavigation } from '@react-navigation/native';
@@ -12,7 +12,7 @@ export default  Cadastro = () => {
     <View >
        
       <Text>Cadastre sua filial!</Text>
-       <Text> cadastre sua filial </Text>
+       
     
 
       <TouchableOpacity 

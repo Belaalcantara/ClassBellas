@@ -13,7 +13,7 @@ const Stack = createNativeStackNavigator()
 const StackRoutes =()=>{
     return(
         <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="ClassBella" component={Home} />
+        <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Filiais" component={Filiais} />
         <Stack.Screen name="Perfil" component={Perfil} />
         <Stack.Screen name="Cadastro" component={Cadastro} />

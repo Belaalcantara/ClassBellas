@@ -10,7 +10,7 @@ export default Filial = () => {
     <View>
       <Text>FILIAIS</Text>
       <TouchableOpacity
-            onPress={() => navigation.navigate("ClassBella")}
+            onPress={() => navigation.navigate("Cadastro")}
       >
        <Text> veja nossas filiais, e cadastre a sua!</Text>
       </TouchableOpacity>
