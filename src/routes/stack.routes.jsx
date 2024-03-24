@@ -1,9 +1,9 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Home from "../sreens/Home";
-import Filiais from "../sreens/Filiais";
-import Perfil from "../sreens/Perfil";
-import Cadastro from "../sreens/Cadastro";
-import Detalhes from "../sreens/Detalhes";
+import Home from "../screens/Home";
+import Filiais from "../screens/Filiais";
+import Perfil from "../screens/Perfil";
+import Cadastro from "../screens/forms";
+import Detalhes from "../screens/Detalhes";
 
 
 

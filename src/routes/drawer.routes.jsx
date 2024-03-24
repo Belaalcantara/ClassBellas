@@ -1,11 +1,11 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { Feather } from "@expo/vector-icons";
 
-import Home from "../sreens/Home";
-import Filiais from "../sreens/Filiais";
-import filiais from "../data/filiais";
-import Perfil from "../sreens/Perfil";
-import Cadastro from "../sreens/Cadastro";
+import Home from "../screens/Home";
+import Filiais from "../screens/Filiais";
+import filiais from "../data/FirstFilial/user";
+import Perfil from "../screens/Perfil";
+import Cadastro from "../screens/forms";
 
 const Drawer = createDrawerNavigator();
 
@@ -17,6 +17,10 @@ const DrawerRoutes = () => {
         component={Home}
         options={{
           headerTitle: "Pagina inicial",
+          headerTintColor: "#003077",
+          headerStyle: {
+            backgroundColor: "",
+          },
           drawerIcon: ({ focused }) => (
             <Feather
               name="home"
@@ -34,7 +38,8 @@ const DrawerRoutes = () => {
         component={Filiais}
         initialParams={{ data: filiais }}
         options={{
-          headerTitle: "",
+          headerTitle: "Filiais",
+          headerTintColor: "#003077",
           drawerIcon: ({ mappin }) => (
             <Feather name="map-pin" size={24} color="#013440" />
           ),
@@ -49,7 +54,8 @@ const DrawerRoutes = () => {
         component={Perfil}
         initialParams={{ data: filiais }}
         options={{
-          headerTitle: "",
+          headerTitle: "Perfil",
+          headerTintColor: "#003077",
           drawerIcon: ({ user }) => (
             <Feather name="user" size={24} color="black" />
           ),
@@ -66,7 +72,8 @@ const DrawerRoutes = () => {
         component={Cadastro}
         initialParams={{ data: filiais }}
         options={{
-          headerTitle: "",
+          headerTitle: "Cadastre-se!",
+          headerTintColor: "#003077",
           drawerIcon: ({ users }) => (
             <Feather name="users" size={24} color=  "#013440" />
           ),
@@ -82,3 +89,6 @@ const DrawerRoutes = () => {
     
   )}
   export default DrawerRoutes;
+
+  
+
