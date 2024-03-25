@@ -68,7 +68,7 @@ não é apenas um local de aprendizado; é um manifesto para o futuro. Um lembre
 
 
         <TouchableOpacity
-          onPress={() => navigation.navigate("Filiais")}
+          onPress={() => navigation.navigate("Filial")}
         >
           <Text style={styles.LinkPG} >Veja nossas filiais, e cadastre a sua!</Text>
         </TouchableOpacity>

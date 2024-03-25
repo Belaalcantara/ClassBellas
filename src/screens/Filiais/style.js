@@ -14,9 +14,14 @@ const styles = StyleSheet.create({
   },
   user: {
     marginTop: 20,
-    padding: 10,
-    backgroundColor: "#C9D4FF",
+    padding: 20,
+    backgroundColor: "#fffff",
     borderRadius: 5,
+    border: "8px outset #1d2159",
+    background: "#ffffff",
+    width:"90vw",
+    height:"70vh"
+
   },
   userDetail: {
     marginBottom: 10,

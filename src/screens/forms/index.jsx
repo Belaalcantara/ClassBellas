@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 
 import styles from "./style";
 import Title from "../components/Title";
-
 import usersRepository from "../../models/Filiais/cadastroF";
 import Filial1 from "../../models/Filiais/filial1";
 
@@ -12,7 +11,6 @@ import Filial1 from "../../models/Filiais/filial1";
 
 export default function Form({ route }) {
   let { user, edit } = route.params;
-
   const [nome_Escola, setNomeEscola] = useState("");
   const [fundacao, setFundacao] = useState("");
   const [email, setEmail] = useState("");
@@ -49,7 +47,7 @@ export default function Form({ route }) {
       usersRepository.add(newUser);
       clearInputs();
     }
-    navigation.navigate("Users");
+    navigation.navigate("Filiais");
   };
 
   const clearInputs = () => {

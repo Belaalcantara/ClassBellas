@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 50,
     alignItems: "center",
+  
   },
   button: {
     marginTop: 20,

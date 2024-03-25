@@ -38,7 +38,7 @@ export default  Perfil = () => {
       </View>
     
        <TouchableOpacity
-        onPress={() => navigation.navigate("Filiais")}
+        onPress={() => navigation.navigate("Filial")}
       >
         <Text style={styles.LinkPG}>Venha fazer parte do nosso time!</Text>
       </TouchableOpacity>

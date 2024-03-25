@@ -11,7 +11,7 @@ export default function Filial({ route }) {
   const { data } = route.params;
 
   const editUser = () => {
-    navigation.navigate('Form', { user: data, edit: true });
+    navigation.navigate('forms', { user: data, edit: true });
   };
 
   const deleteUser = () => {
@@ -30,7 +30,7 @@ export default function Filial({ route }) {
             <View style={styles.userDetail}>
               <Text style={styles.text}>{data.nome_Escola}</Text>
               <Text style={styles.text}>{data.cargo}</Text>
-              <Text style={styles.text}>{data.fundacao}</Text>
+              <Text style={styles.text}>{data.responsavel}</Text>
               <Text style={styles.text}>{data.email}</Text>
               <Text style={styles.text}>{data.quantia_Alunos}</Text>
               <Text style={styles.text}>{data.quantia_Turma}</Text>
