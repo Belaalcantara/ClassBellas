@@ -1,7 +1,7 @@
 Projeto onde teriamos re criar um site de uma escola com  foco na utilização das navegações, neste projeto utilizei uma combinação da Drawer e Stack, para navegar entre as paginas com mais facilidade possuindo
 um texto que levara ara outra página no final de cada página, mas também havera a barra de navegação do drawer ao lado.
 Havera uma pagina onde falara sobre a escola,  como NOSSO colégio funciona, e também havera uma foto da estrutura da escola, esta página é a home, também tera a paina sobre o perfil do programador, uma para se cadastrar e outra para ver nossos colaboradores,
-que seria todas as filiais ja cadastradas.
+que seria todas as filiais ja cadastradas, onde também podera editar e remover sua ou qualquer outra filial.
 
 Imagens do prjeto:
 
