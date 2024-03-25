@@ -51,6 +51,7 @@ export default function Form({ route }) {
       const newUser = new Filial1( nome_Escola, fundacao, responsavel, cargo, endereco, quantia_alunos, quantia_turmas, contato, email || 0);
       usersRepository.add(newUser);
       clearInputs();
+      console.log(usersRepository)
     }
     navigation.navigate("Filiais");
   };
@@ -71,7 +72,7 @@ export default function Form({ route }) {
   return (
     <ScrollView>
     <View style={styles.container}>
-        <Text style={styles.title} >FAÇA PATE DA NOSSA EQUEIPE.</Text>
+        <Text style={styles.title} >FAÇA PARTE DA NOSSA EQUEIPE.</Text>
      
       <TextInput
         placeholder="Digite o nome da sua filial."

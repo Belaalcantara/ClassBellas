@@ -1,30 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { Feather } from '@expo/vector-icons';
 import styles from './style';
 
 import usersRepository from '../../models/Filiais/cadastroF';
+import { ScrollView } from 'react-native-gesture-handler';
 
 export default function Filial({ route }) {
   const navigation = useNavigation();
   const { data } = route.params;
-
   const editUser = () => {
     navigation.navigate('Form', { user: data, edit: true });
   };
 
   const deleteUser = () => {
     usersRepository.remove(data.id);
-    navigation.navigate('Detalhes');
+    navigation.navigate('Filial1');
   };
-
   return (
     <View style={styles.container}>
      
       {data ? (
+        <ScrollView>
         <View>
-          <Text style={styles.title} >Veja nossos colaboradores!</Text>
+          <Text style={styles.title} >VEJA NOSSOS COLABORADORES!</Text>
           <View style={styles.user}>
             <View style={styles.userDetail}>
               <Text style={styles.text}> Nome da escola: {data.nome_Escola}</Text>
@@ -46,6 +46,7 @@ export default function Filial({ route }) {
             </View>
           </View>
         </View>
+        </ScrollView>
       ) : (
         <Text>Selecione um usuário para exibir seus detalhes</Text>
       )}

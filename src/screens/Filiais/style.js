@@ -20,7 +20,8 @@ const styles = StyleSheet.create({
     border: " 4px groove #21329E",
     background: "#ffffff",
     width:"90vw",
-    height:"70vh"
+    height:"70vh",
+    marginLeft:"20px"
 
   },
   userDetail: {
@@ -57,7 +58,8 @@ const styles = StyleSheet.create({
     fontWeight: "normal", 
     fontStyle: "normal", 
     fontSize: "25px",
-    padding:"10px"
+    padding:"10px",
+    textAlign:"center"
 },
 });
 
