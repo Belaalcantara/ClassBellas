@@ -16,8 +16,8 @@ const styles = StyleSheet.create({
     marginTop: 20,
     padding: 20,
     backgroundColor: "#fffff",
-    borderRadius: 5,
-    border: "8px outset #1d2159",
+    borderRadius: 16,
+    border: " 4px groove #21329E",
     background: "#ffffff",
     width:"90vw",
     height:"70vh"
@@ -34,21 +34,31 @@ const styles = StyleSheet.create({
   editButton: {
     padding: 5,
     borderRadius: 5,
-    backgroundColor: "#4CAF50",
     marginRight: 5,
     minWidth: 70,
     alignItems: "center",
+    marginTop: "50px",
   },
   deleteButton: {
     padding: 5,
     borderRadius: 5,
-    backgroundColor: "#FF6347",
+    marginTop: "50px",
     minWidth: 70,
     alignItems: "center",
   },
   text: {
     fontSize: 16,
+    margin:"3px",
+    
   },
+  title: {
+    color: "#13293d",
+    fontFamily: "Encode Sans SC",
+    fontWeight: "normal", 
+    fontStyle: "normal", 
+    fontSize: "25px",
+    padding:"10px"
+},
 });
 
 export default styles;

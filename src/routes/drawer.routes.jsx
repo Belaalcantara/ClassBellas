@@ -5,7 +5,7 @@ import Home from "../screens/Home";
 import Filiais from "../screens/Filiais";
 import filiais from "../data/FirstFilial/user";
 import Perfil from "../screens/Perfil";
-import Cadastro from "../screens/forms";
+import Form from "../screens/Forms";
 import { user } from "../data/FirstFilial/user";
 
 const Drawer = createDrawerNavigator();
@@ -58,7 +58,7 @@ const DrawerRoutes = () => {
           headerTitle: "Perfil",
           headerTintColor: "#003077",
           drawerIcon: ({ user }) => (
-            <Feather name="user" size={24} color="black" />
+            <Feather name="user" size={24} color="#013440" />
           ),
           drawerLabel: "perfil",
           drawerActiveTintColor: "#013440",
@@ -68,8 +68,8 @@ const DrawerRoutes = () => {
 
       <Drawer.Screen
         name="Cadastro"
-        component={Cadastro}
-        initialParams={{ data: filiais }}
+        component={Form}
+        initialParams={{ data: filiais, edit: false }}
         options={{
           headerTitle: "Cadastre-se!",
           headerTintColor: "#003077",

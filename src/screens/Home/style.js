@@ -17,7 +17,8 @@ const styles = StyleSheet.create({
         fontWeight: "normal", 
         fontStyle: "normal", 
         fontSize: "25px",
-        padding:"10px"
+        padding:"10px",
+        textAlign:"center"
     },
     img:{
         width:"100vw",
@@ -25,8 +26,8 @@ const styles = StyleSheet.create({
         margin: "20px"
     },
     ftLado:{
-        width:"190px",
-        height:"130px"
+        width:"10px",
+        height:"40px"
      },
      imgPerfil:{
     width:"60vw",

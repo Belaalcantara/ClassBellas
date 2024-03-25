@@ -6,6 +6,7 @@ import styles from "./style";
 import Title from "../components/Title";
 import usersRepository from "../../models/Filiais/cadastroF";
 import Filial1 from "../../models/Filiais/filial1";
+import { ScrollView } from "react-native-gesture-handler";
 
 
 
@@ -14,7 +15,9 @@ export default function Form({ route }) {
   const [nome_Escola, setNomeEscola] = useState("");
   const [fundacao, setFundacao] = useState("");
   const [email, setEmail] = useState("");
+  const [responsavel, setResponsavel] = useState("");
   const [cargo, setCargo] = useState("");
+  const [endereco, setEndereco] = useState("");
   const [quantia_alunos, setQuantiaAlunos] = useState("");
   const [quantia_turmas, setQuantiaTurmas] = useState("");
   const [contato, setContato] = useState("");
@@ -27,7 +30,9 @@ export default function Form({ route }) {
       setNomeEscola(user.nome_Escola);
       setFundacao(user.fundacao);
       setEmail(user.email);
-      setCargo(user.cargo);
+      setResponsavel(user.responsavel); 
+      setCargo(user.cargo); 
+      setEndereco(user.endereco);
       setQuantiaAlunos(user.quantia_alunos);
       setQuantiaTurmas(user.quantia_turmas);
       setContato(user.contato);
@@ -40,10 +45,10 @@ export default function Form({ route }) {
   const handleUserAction = () => {
     if (isUpdate) {
     
-     usersRepository.update(user.id, nome_Escola, fundacao, cargo, quantia_alunos, quantia_turmas, contato, email  || 0);
+     usersRepository.update(user.id, nome_Escola, fundacao, responsavel, cargo, endereco, quantia_alunos, quantia_turmas, contato, email  || 0);
       clearInputs();
     } else {
-      const newUser = new Filial1( nome_Escola, fundacao, cargo, quantia_alunos, quantia_turmas, contato, email || 0);
+      const newUser = new Filial1( nome_Escola, fundacao, responsavel, cargo, endereco, quantia_alunos, quantia_turmas, contato, email || 0);
       usersRepository.add(newUser);
       clearInputs();
     }
@@ -57,14 +62,17 @@ export default function Form({ route }) {
     setFundacao("");
     setEmail("");
     setCargo(""); 
+    setResponsavel(""); 
     setQuantiaAlunos(""); 
     setQuantiaTurmas(""); 
     setContato(""); 
   };
 
   return (
+    <ScrollView>
     <View style={styles.container}>
-      <Title title={isUpdate ? "Editar Usuário" : "Novo Usuário"} />
+        <Text style={styles.title} >FAÇA PATE DA NOSSA EQUEIPE.</Text>
+     
       <TextInput
         placeholder="Digite o nome da sua filial."
         style={styles.userInput}
@@ -77,10 +85,16 @@ export default function Form({ route }) {
         style={styles.userInput}
         onChangeText={setFundacao}
         value={fundacao}
-        keyboardType="numeric"
+        keyboardType="data"
       />
 
-
+<TextInput
+        placeholder="Digite o nome do responsavel."
+        style={styles.userInput}
+        onChangeText={setResponsavel}
+        value={responsavel}
+        
+      /> 
       <TextInput
         placeholder="Digite o email do usuário"
         style={styles.userInput}
@@ -117,6 +131,14 @@ export default function Form({ route }) {
         keyboardType="numeric"
       />
 
+<TextInput
+        placeholder="Digite o endereço."
+        style={styles.userInput}
+        onChangeText={setEndereco}
+        value={endereco}
+        keyboardType="numeric"
+      />
+
 
       <TouchableOpacity style={styles.button} onPress={handleUserAction}>
         <Text>{isUpdate ? "Salvar Alterações" : "Criar Usuário"}</Text>
@@ -128,5 +150,6 @@ export default function Form({ route }) {
         </TouchableOpacity>
       )}
     </View>
+    </ScrollView>
   );
 }
