@@ -5,8 +5,8 @@ import Home from "../screens/Home";
 import Filiais from "../screens/Filiais";
 import filiais from "../data/FirstFilial/user";
 import Perfil from "../screens/Perfil";
-import Form from "../screens/Forms";
-import { user } from "../data/FirstFilial/user";
+import Form from "../screens/Form";
+import  user  from "../data/FirstFilial/user";
 
 const Drawer = createDrawerNavigator();
 

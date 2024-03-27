@@ -19,8 +19,8 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     border: " 4px groove #21329E",
     background: "#ffffff",
-    width:"90vw",
-    height:"70vh",
+    width:"80vw",
+    height:"40vh",
     marginLeft:"20px"
 
   },
@@ -38,12 +38,12 @@ const styles = StyleSheet.create({
     marginRight: 5,
     minWidth: 70,
     alignItems: "center",
-    marginTop: "50px",
+    marginTop: "7px",
   },
   deleteButton: {
     padding: 5,
     borderRadius: 5,
-    marginTop: "50px",
+    marginTop: "7px",
     minWidth: 70,
     alignItems: "center",
   },

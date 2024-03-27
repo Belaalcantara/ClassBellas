@@ -3,9 +3,9 @@ import { useNavigation } from "@react-navigation/native";
 import { useState, useEffect } from "react";
 
 import styles from "./style";
-import Title from "../components/Title";
 import usersRepository from "../../models/Filiais/cadastroF";
 import Filial1 from "../../models/Filiais/filial1";
+
 import { ScrollView } from "react-native-gesture-handler";
 
 

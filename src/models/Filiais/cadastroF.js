@@ -1,4 +1,4 @@
-import { user } from "../../data/FirstFilial/user";
+import  user  from "../../data/FirstFilial/user";
 import Filial1 from "./filial1";
 
 class UsersRepository {

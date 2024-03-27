@@ -1,4 +1,4 @@
- export const user= {
+ const user= {
 
     nome_Escola: "EducTech",
     responsavel: "Felipe Santos",
@@ -13,5 +13,6 @@
 
 
 };
+export default user;
 
 
